@@ -1,0 +1,88 @@
+<html>
+	<head>
+		<title>My first html document</title>
+		<meta charset = "utf-8">
+		<link rel="stylesheet" href="mystyle.css">
+		<style>
+			body {background-color: #F0FFF0;}
+			h1 {color: blue;}
+			h2 {color: red;}
+			hr {color: blue;}
+		</style>
+		<script>alert("歡迎來到廖國宏的個人網頁")</script>
+		<script>
+			function myFunction() {
+			document.getElementById("magic").innerHTML="土木系二年級";
+			}
+		</script>
+	</head>
+	<body>
+ 		<div>
+			<h2><center>Hello Everyone!!</center></h2>
+			<p id="area1">Welcome to the website!</p>								<!--使用CSS中的hover-->
+			<hr>
+			<h1><strong>廖國宏 HenryLiao</strong></h1><h3>學號:109302517</h3>
+			<a href="https://www.ncu.edu.tw/tw/">我的學校</a>                      <!--使用CSS中的link visited hover active-->
+			<br>
+			<br>
+			<button type="button" onclick="myFunction()">大學系所</button>
+			<p id="magic"></p>
+			<button type="button" onclick="game()"><center>社團</center></button>
+			<p id="result"></p>
+			<script>
+			function game() {
+				var msg 
+				if  (confirm("[做出決定] 你確定要知道廖國宏有參加甚麼社團嗎?")) {
+					msg = "TEDxNCU" ;
+				} else {
+					msg = "可惜了，你應該對廖國宏更有興趣的!" ;
+				}
+				document.getElementById("result").innerHTML = msg ;
+			}
+			</script>
+			<hr>
+			<ul>
+				<li><i>性別: 男性</i></li>                                         <!--使用CSS中的marker-->
+				<li><i>星座: 水瓶</i></li>
+				<li><i>身高: 176</i></li>
+			</ul>
+			<h3><strong>喜歡吃的食物:</strong></h3>
+			<ol>
+				<li><i>芒果</i></li>
+				<li><i>冰淇淋</i></li>
+				<li><i>巧克力</i></li>
+				<li><i>小熊軟糖</i></li>
+				<li><i>mm巧克力</i></li>
+			</ol>
+			<hr>
+		</div>
+		<div>
+		<table border="3">
+			<caption><strong>興趣專長</strong></caption>
+	
+			<thead style="background-color:#FFE681">
+				<tr>
+					<th>興趣</th><th>專長</th>
+				</tr>
+			</thead>
+
+			<tbody style="background-color:#AEE1CD">
+				<tr>
+					<td>打籃球</td><td>打code</td>
+				</tr>
+				<tr>
+					<td>健身</td><td>畫畫</td>
+				</tr>
+			</tbody>
+			<tfoot style="background-color:#AEE1CD">
+				<tr>
+					<td>看電影</td><td>攝影</td>
+				</tr>
+			</tfoot>
+			</div>
+			<div>																										
+			<p id="area2">連絡電話:0909090909</p>                                  <!--使用CSS中的select by id(area)-->
+		</div>
+		<p>居住地: 台北市大安區大安森林公園旁</p>                                 <!--使用CSS中的general sibiling selector-->
+	</body>
+</html>
