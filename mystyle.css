@@ -1,0 +1,42 @@
+#area1 {
+	background-color: #FFC78E;
+	padding: 16px;
+	text-align:center;
+	display: none;
+}
+
+div:hover #area1 {
+	display: block;
+}
+
+a:link {
+	color: green;
+}
+
+a:visiter {
+	color: red;
+}
+
+a:hover {
+	color: yellow;
+}
+
+a:active {
+	color: blue;
+}
+
+#area2{
+	text-align: center;
+	background-color: black;
+	color: white;
+}
+
+div ~ p {
+	text-align: center;
+	background-color: blue;
+	color: yellow;
+}
+::marker {
+	color: orange;
+	font-size: 24px;
+}
